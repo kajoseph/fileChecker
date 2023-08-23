@@ -1,0 +1,48 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Launch Sync",
+            "program": "${workspaceFolder}/index.js",
+            "request": "launch",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "type": "node",
+            "args": [
+                "sync",
+                "/Users/kajoseph/Desktop/Dashcam"
+            ]
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "Launch Program",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "program": "${workspaceFolder}/index.js",
+            "args": [
+                "init"
+            ]
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "Launch Compare",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "program": "${workspaceFolder}/index.js",
+            "args": [
+                "compare",
+                "./output-local-Grand Tetons Drive - to and from.js",
+                "./output-remote-Grand Tetons Drive - to and from.js"
+            ],
+            "console": "integratedTerminal"
+        }
+    ]
+}
